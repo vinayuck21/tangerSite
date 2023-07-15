@@ -1,0 +1,108 @@
+.heading-container {
+  background-color: rgba(0, 0, 0, 1);
+  display: flex;
+  gap: max-width;
+  margin: 0px;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  transition: background-color 0.3s; /* Adding a smooth transition effect */
+  
+}
+
+.heading-container:hover {
+  background-color: rgba(255, 255, 255, 1); /* New background color on hover */
+}
+
+.heading-container > h2 {
+  transition: color 0.3s; /* Add a transition for the text color */
+}
+
+.h-grid{
+    background-color: rgba(255, 255, 255, 0.05);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items:baseline;
+    gap: 5px;
+}
+.toggle-button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .heading-container:hover > h2{
+    color: black;
+  }
+
+  .heading-container h2{
+    height: 0px;
+  }
+  #h-list{
+    top: 270vh;
+    font-size: 10px;
+    color: white;
+    height: 80vh;
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+
+  .toggle-button::after {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    transform: rotate(45deg);
+    margin-left: 4px;
+  }
+  .h-grid ul {
+    list-style-type:none ;
+    margin: 20px;
+    color:white;
+  }
+  .h-grid ul li{
+    color: white;
+    transition: color 0.3s;
+} 
+
+  
+
+  @media  screen and (max-width:769px){
+    #h-list{
+        background-color: rgba(255, 255, 255, 0);
+        font-size: 7px;
+        align-items: center;
+        color: white;
+    }
+    .h-grid{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: baseline;
+    }
+    .toggle-button::after {
+        content: '';
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        border-top: 1px solid white;
+        border-right: 1px solid white;
+        transform: rotate(45deg);
+        margin-left: 2px;
+      }
+      .h-grid ul {
+        margin: 5px;
+        color:black;
+      }
+      .h-grid ul li{
+        color: black;
+      }
+  }
+
+  .animate__animated.animate__zoomIn {
+    --animate-duration: 200ms;
+  }

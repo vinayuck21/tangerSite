@@ -1,0 +1,28 @@
+.smgrid{
+    position: relative;
+    top:0vh;
+    width: 100vw;
+    display: grid;
+    border: 1px;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.banner{
+    position: relative;
+    top:0vh;
+    height: 70vh;
+    background-color: rgb(47,55,144);
+    background-image: url('./assets/sm.jpeg');
+}
+@media screen and (max-width:1270px) {
+    .smgrid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width:840px) {
+    .smgrid{
+        grid-template-columns: 1fr;
+    }
+}

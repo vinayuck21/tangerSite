@@ -1,0 +1,23 @@
+.aupage{
+    position: relative;
+    top:0vh;
+}
+
+#text{
+    min-height: 50vh;
+}
+.mh{
+    display: block;
+}
+#landing{
+    background-image: url('./assets/home2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;     
+    min-height: 100vh;
+}
+
+@media  screen and (max-width:769px){
+    .mh{
+        display: none;
+    }
+}
